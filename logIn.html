@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentification</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="Auth.jpg">
+    
+</head>
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form action="POST" id="loginForm">
+        <h3>Authentification</h3>
+
+        <label for="identifiant">Identifiant :</label>
+        <input type="email"  id="identifiant" placeholder="Enter your email" required>
+        
+        
+        <label for="motDePasse">Mot de passe : </label>
+        <input type="password" id="motDePasse" name="motDePasse" placeholder="Enter your password" required>
+
+        <button type="submit"> Se connecter</button>
+        <div class="social">
+            <div class="go"><i class="fab fa-google"> Google</i></div>
+            <div class="fb"><i class="fab fa-facebook"> Facebook</i></div>
+        </div>
+    </form>
+    <script src="login.js"></script>
+</body>
+</html>

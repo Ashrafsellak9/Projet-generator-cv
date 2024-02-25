@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information</title>
+    <link rel="stylesheet" href="infos.css">
+    <link rel="icon" href="form.jpg">
+</head>
+<body>
+    
+    <div class="container">
+        <!--
+        <header>
+            <h1>User Information</h1>
+        </header>
+        -->
+        <div class="container">
+            <header>
+                <h1 id="title">CV Survey Form</h1>
+                <p id="description">Thanks for taking the time to help us to create for you a CV</p>
+            </header>
+        </div>
+        <form id="userInfoForm">
+            <div class="form-group">
+                <label for="last-name-label"> <strong>Last Name : </strong> <br><br><input type="text" id="last-name" placeholder="Enter your last-name" required></label><br>
+            </div>
+            <div class="form-group">
+                <label for="first-name-label"> <strong>First Name : </strong> <br><br><input type="text" id="first-name" placeholder="Enter your first-name" required></label><br>
+            </div>
+            <div>
+                <label for="birth-label"> <strong>Date Birth : </strong> <br><br> <input type="date" name="date" id="date" required></label> <br>
+            </div>
+            <div>
+                <label for="gender-label"> <strong>Gender : </strong> <br><br>
+                    <input type="radio" name="gender" id="gender" required> Male
+                    <input type="radio" name="gender" id="gender" required> Female
+                    <input type="radio" name="gender" id="gender" required> Other
+                </label>  <br>
+            </div>
+            <div class="form-group">
+                <label for="email-label"> <strong>Email :</strong> <br><br><input type="email" id="email" placeholder="Enter your email" required></label><br>
+            </div>
+            <div class="form-group">
+                <label for="number-label"> <strong>Phone Number :</strong> <br><br><input type="tel" id="number" placeholder="Enter your phone number" required></label><br>
+            </div>
+            <div class="form-group">
+                <h2>Education</h2>
+                <div>
+                    <label for="education1">Degree: </label><br>
+                    <input type="text" id="education1" name="education1" placeholder="Ex: Bachelor computer science"><br><br>
+
+                    <label for="education1date">Completion Date: </label><br>
+                    <input type="text" id="education1date" name="education1date" placeholder="Ex: February 2024"> <br><br>
+                </div>
+            </div>
+            <button type="button" onclick="addEducationField()">Add Education</button>
+            
+            <div class="form-group">
+                <h2>Work Experience:</h2>
+                <div id="experienceFields">
+                    <div>
+                      <label for="experience1">Position:</label><br>
+                      <input type="text" id="experience1" name="experience1" placeholder="Ex: Web Developer"><br><br>
+      
+                      <label for="experience1dates">Dates:</label><br>
+                      <input type="text" id="experience1dates" name="experience1dates" placeholder="Ex: January 2021 - January 2023"><br><br>
+      
+                      <label for="experience1desc">Description:</label><br>
+                      <textarea id="experience1desc" name="experience1desc" placeholder="Ex: Responsible for developing websites for international clients" rows="15" cols="80"></textarea><br>
+                </div>
+            </div>
+            <button type="button" onclick="addExperienceField()">Add Experience</button>
+
+            </div>
+            <div class="form-group">
+                <label for="photo"><strong>Insert your photo</strong></label>
+                <input type="file" name="photo" id="photo" class="photo-upload" required>
+            </div>            
+            <div>
+                <label for="linkedin"><strong>Profil LinkedIn (Optional)</strong> <br><br> <input type="text" id="linkedin" name="linkedin"></label> <br><br>
+            </div>
+            <button type="submit">Generate CV</button>
+        </form>
+    </div>
+    <script src="infos.js"></script>
+</body>
+</html>
