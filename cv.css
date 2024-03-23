@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 /* Global Styles */
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    background-image: linear-gradient(to right, rgba(218, 191, 230, 0.888) 50%, rgb(237, 237, 244) 50%);
   }
   
   .container {
@@ -21,6 +23,7 @@ body {
     text-align: center;
     margin-bottom: 20px;
     color: #333;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
   
   h2 {
@@ -28,6 +31,8 @@ body {
     border-bottom: 1px solid #ccc;
     padding-bottom: 5px;
     margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   ul {
@@ -60,7 +65,7 @@ body {
   
   #download-pdf {
     display: block;
-    width: 100%;
+    width: 200px;
     padding: 10px;
     text-align: center;
     background-color: #007bff;
@@ -70,6 +75,7 @@ body {
     cursor: pointer;
     margin-top: 20px;
     transition: background-color 0.3s ease;
+    margin: auto;
   }
   
   #download-pdf:hover {
@@ -87,3 +93,20 @@ body {
     }
   }
   
+  p {
+    margin-left: 30px;
+    padding: 5px;
+  }
+  
+  #education-list {
+    margin-left: 20px;
+    padding: 15px;
+  }
+  #experience-list {
+    margin-left: 20px;
+    padding: 15px;
+  }
+
+  #linkedin-url {
+    text-align: center;
+  }
