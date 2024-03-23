@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('name').textContent = 'Name: ' + cvData['first-name'] + ' ' + cvData['last-name'];
   document.getElementById('email').textContent = 'Email: ' + cvData['email'];
   document.getElementById('date').textContent = 'Date of Birth: ' + cvData['date'];
+  document.getElementById('phone').textContent = 'Phone Number: ' + cvData['phone'];
+  
+
   
   var genderText = '';
   if (cvData['gender'] === 'male') {
@@ -47,6 +50,18 @@ document.addEventListener('DOMContentLoaded', function() {
   reader.onload = function(e) {
     var imageUrl = e.target.result;
     document.getElementById('profile-picture').src = imageUrl;
+  };
+  reader.readAsDataURL(file);
+});
+
+  
+document.getElementById('profile-picture').addEventListener('change', function() {
+  var fileInput = this;
+  var file = fileInput.files[0];
+  var reader = new FileReader();
+  reader.onload = function(e) {
+    var imageUrl = e.target.result;
+    document.getElementById('profile-picture').src = imageUrl; // Assuming 'preview' is the ID of the element where you want to display the image
   };
   reader.readAsDataURL(file);
 });
