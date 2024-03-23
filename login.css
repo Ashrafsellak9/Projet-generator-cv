@@ -1,4 +1,3 @@
-@media screen and (max-width: 768px) {
 *,
 *:before,
 *:after{
@@ -128,4 +127,4 @@ button:hover {
 .social i{
   margin-right: 4px;
 }
-}
+
